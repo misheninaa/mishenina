@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+      <head><script>
+            function func(){
+            var a = Number(document.getElementById("first").value);
+            var b = Number(document.getElementById("second").value);
+            var c = a + b;
+            document.getElementById("plus").innerHTML = c;
+                  }
+            function func2(){
+                  var x = Number(document.getElementById("first2").value);
+                  var y = Number(document.getElementById("second2").value);
+                  var z = x - y;
+                  document.getElementById("min").innerHTML = z;
+                  }
+            function func3(){
+            var m = Number(document.getElementById("first3").value);
+            var n = Number(document.getElementById("second3").value);
+                  var k = m / n;
+                  document.getElementById("dil").innerHTML = k;
+                  }
+            function func4(){
+                  var d = Number(document.getElementById("first4").value);
+                  var p = Number(document.getElementById("second4").value);
+                   var s =  Math.pow(d, p);
+                   document.getElementById("step").innerHTML = s;
+                  }
+            function func5(){
+                  var r = Number(document.getElementById("first5").value);
+                   var t = Number(document.getElementById("second5").value);
+                   var v = r * t;
+                  document.getElementById("pomn").innerHTML = v;
+                  }
+          </script>
+          </head>
+          <body><table border="insert"> <tr><td>
+          <p>
+          <input id="first"/> + <input id="second"/> = <output id="plus"/>
+          <button onclick="func()">Дорівнює</button></p></td></tr>
+          <tr><td> <p>
+          <input id="first2"/> - <input id="second2"/> = <output id="min"/>
+          <button onclick="func2()">Дорівнює</button>
+      </p></td></tr><tr><td><p>
+            <input id="first3"/> / <input id="second3"/> = <output id="dil"/>
+            <button onclick="func3()">Дорівнює</button>
+      </p></td></tr><tr><td><p>
+            <input id="first4"/> ^ <input id="second4"/> = <output id="step"/>
+            <button onclick="func4()">Дорівнює</button>
+      </p></td></tr><tr><td><p>
+          <input id="first5"/> * <input id="second5"/> = <output id="pomn"/>
+          <button onclick="func5()">Дорівнює</button>
+      </p></td></tr></table>
+          </body>
+</html>
